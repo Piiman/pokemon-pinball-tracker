@@ -1,0 +1,1847 @@
+[
+  {
+    "id": "001",
+    "hex": 0,
+    "name": "Treecko",
+    "board": "ruby",
+    "area": ["forest"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": "002",
+    "hex": 1,
+    "name": "Grovyle",
+    "board": "ruby",
+    "area": ["forest"],
+    "arrows": 3,
+    "pre": "Treecko"
+  },
+  {
+    "id": "003",
+    "hex": 2,
+    "name": "Sceptile",
+    "board": "ruby",
+    "area": ["forest"],
+    "arrows": 3,
+    "pre": "Grovyle"
+  },
+  {
+    "id": "004",
+    "hex": 3,
+    "name": "Torchic",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": "005",
+    "hex": 4,
+    "name": "Combusken",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": 3,
+    "pre": "Torchic"
+  },
+  {
+    "id": "006",
+    "hex": 5,
+    "name": "Blaziken",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": 3,
+    "pre": "Combusken"
+  },
+  {
+    "id": "007",
+    "hex": 6,
+    "name": "Mudkip",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": "008",
+    "hex": 7,
+    "name": "Marshtomp",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": 3,
+    "pre": "Mudkip"
+  },
+  {
+    "id": "009",
+    "hex": 8,
+    "name": "Swampert",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": 3,
+    "pre": "Marshtomp"
+  },
+  {
+    "id": "010",
+    "hex": 9,
+    "name": "Poochyena",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "011",
+    "hex": "A",
+    "name": "Mightyena",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": "2-3",
+    "pre": "Poochyena"
+  },
+  {
+    "id": "012",
+    "hex": "B",
+    "name": "Zigzagoon",
+    "board": "ruby",
+    "area": ["forest"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "013",
+    "hex": "C",
+    "name": "Linoone",
+    "board": "ruby",
+    "area": ["forest"],
+    "arrows": "2-3",
+    "pre": "Zigzagoon"
+  },
+  {
+    "id": "014",
+    "hex": "D",
+    "name": "Wurmple",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "015",
+    "hex": "E",
+    "name": "Silcoon",
+    "board": "any",
+    "area": ["forest", "egg"],
+    "arrows": "2-3",
+    "pre": "Wurmple"
+  },
+  {
+    "id": "016",
+    "hex": "F",
+    "name": "Beautifly",
+    "board": "any",
+    "area": ["forest", "egg"],
+    "arrows": "2-3",
+    "pre": "Silcoon"
+  },
+  {
+    "id": "017",
+    "hex": 10,
+    "name": "Cascoon",
+    "board": "any",
+    "area": ["forest", "egg"],
+    "arrows": "2-3",
+    "pre": "Wurmple"
+  },
+  {
+    "id": "018",
+    "hex": 11,
+    "name": "Dustox",
+    "board": "any",
+    "area": ["forest", "egg"],
+    "arrows": "2-3",
+    "pre": "Cascoon"
+  },
+  {
+    "id": "019",
+    "hex": 12,
+    "name": "Lotad",
+    "board": "sapphire",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "020",
+    "hex": 13,
+    "name": "Lombre",
+    "board": "sapphire",
+    "area": ["lake", "egg"],
+    "arrows": "2-3",
+    "pre": "Lotad"
+  },
+  {
+    "id": "021",
+    "hex": 14,
+    "name": "Ludicolo",
+    "board": "sapphire",
+    "area": ["lake", "egg"],
+    "arrows": "2-3",
+    "pre": "Lombre"
+  },
+  {
+    "id": "022",
+    "hex": 15,
+    "name": "Seedot",
+    "board": "ruby",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "023",
+    "hex": 16,
+    "name": "Nuzleaf",
+    "board": "ruby",
+    "area": ["forest", "egg"],
+    "arrows": "2-3",
+    "pre": "Seedot"
+  },
+  {
+    "id": "024",
+    "hex": 17,
+    "name": "Shiftry",
+    "board": "ruby",
+    "area": ["forest", "egg"],
+    "arrows": "2-3",
+    "pre": "Nuzleaf"
+  },
+  {
+    "id": "025",
+    "hex": 18,
+    "name": "Taillow",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "026",
+    "hex": 19,
+    "name": "Swellow",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": "2-3",
+    "pre": "Taillow"
+  },
+  {
+    "id": "027",
+    "hex": "1A",
+    "name": "Wingull",
+    "board": "any",
+    "area": ["lilycove", "beach"],
+    "arrows": 2,
+    "pre": ""
+  },
+  {
+    "id": "028",
+    "hex": "1B",
+    "name": "Pelipper",
+    "board": "any",
+    "area": ["lilycove", "beach"],
+    "arrows": 2,
+    "pre": "Wingull"
+  },
+  {
+    "id": "029",
+    "hex": "1C",
+    "name": "Ralts",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "030",
+    "hex": "1D",
+    "name": "Kirlia",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Ralts"
+  },
+  {
+    "id": "031",
+    "hex": "1E",
+    "name": "Gardevoir",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Kirlia"
+  },
+  {
+    "id": "032",
+    "hex": "1F",
+    "name": "Surskit",
+    "board": "sapphire",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "033",
+    "hex": 20,
+    "name": "Masquerain",
+    "board": "sapphire",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Surskit"
+  },
+  {
+    "id": "034",
+    "hex": 21,
+    "name": "Shroomish",
+    "board": "ruby",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "035",
+    "hex": 22,
+    "name": "Breloom",
+    "board": "ruby",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Shroomish"
+  },
+  {
+    "id": "036",
+    "hex": 23,
+    "name": "Slakoth",
+    "board": "sapphire",
+    "area": ["forest"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "037",
+    "hex": 24,
+    "name": "Vigoroth",
+    "board": "sapphire",
+    "area": ["forest"],
+    "arrows": "2-3",
+    "pre": "Slakoth"
+  },
+  {
+    "id": "038",
+    "hex": 25,
+    "name": "Slaking",
+    "board": "sapphire",
+    "area": ["forest"],
+    "arrows": "2-3",
+    "pre": "Vigoroth"
+  },
+  {
+    "id": "039",
+    "hex": 26,
+    "name": "Abra",
+    "board": "any",
+    "area": ["cave"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": "040",
+    "hex": 27,
+    "name": "Kadabra",
+    "board": "any",
+    "area": ["cave"],
+    "arrows": 3,
+    "pre": "Abra"
+  },
+  {
+    "id": "041",
+    "hex": 28,
+    "name": "Alakazam",
+    "board": "any",
+    "area": ["cave"],
+    "arrows": 3,
+    "pre": "Kadabra"
+  },
+  {
+    "id": "042",
+    "hex": 29,
+    "name": "Nincada",
+    "board": "any",
+    "area": ["forest"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": "043",
+    "hex": "2A",
+    "name": "Ninjask",
+    "board": "any",
+    "area": ["forest"],
+    "arrows": 3,
+    "pre": "Nincada"
+  },
+  {
+    "id": "044",
+    "hex": "2B",
+    "name": "Shedinja",
+    "board": "any",
+    "area": ["forest"],
+    "arrows": 3,
+    "pre": "Nincada"
+  },
+  {
+    "id": "045",
+    "hex": "2C",
+    "name": "Whismur",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "046",
+    "hex": "2D",
+    "name": "Loudred",
+    "board": "any",
+    "area": ["cave", "egg"],
+    "arrows": "2-3",
+    "pre": "Whismur"
+  },
+  {
+    "id": "047",
+    "hex": "2E",
+    "name": "Exploud",
+    "board": "any",
+    "area": ["cave", "egg"],
+    "arrows": "2-3",
+    "pre": "Loudred"
+  },
+  {
+    "id": "048",
+    "hex": "2F",
+    "name": "Makuhita",
+    "board": "sapphire",
+    "area": ["cave"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "049",
+    "hex": 30,
+    "name": "Hariyama",
+    "board": "sapphire",
+    "area": ["cave"],
+    "arrows": "2-3",
+    "pre": "Makuhita"
+  },
+  {
+    "id": "050",
+    "hex": 31,
+    "name": "Goldeen",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": 2,
+    "pre": ""
+  },
+  {
+    "id": "051",
+    "hex": 32,
+    "name": "Seaking",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": 2,
+    "pre": "Goldeen"
+  },
+  {
+    "id": "052",
+    "hex": 33,
+    "name": "Magikarp",
+    "board": "sapphire",
+    "area": ["beach"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "053",
+    "hex": 34,
+    "name": "Gyarados",
+    "board": "sapphire",
+    "area": ["beach"],
+    "arrows": "2-3",
+    "pre": "Magikarp"
+  },
+  {
+    "id": "054",
+    "hex": 35,
+    "name": "Azurill",
+    "board": "sapphire",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "055",
+    "hex": 36,
+    "name": "Marill",
+    "board": "sapphire",
+    "area": ["lake", "egg"],
+    "arrows": "2-3",
+    "pre": "Azurill"
+  },
+  {
+    "id": "056",
+    "hex": 37,
+    "name": "Azumarill",
+    "board": "sapphire",
+    "area": ["lake", "egg"],
+    "arrows": "2-3",
+    "pre": "Marill"
+  },
+  {
+    "id": "057",
+    "hex": 38,
+    "name": "Geodude",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "058",
+    "hex": 39,
+    "name": "Graveler",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": "2-3",
+    "pre": "Geodude"
+  },
+  {
+    "id": "059",
+    "hex": "3A",
+    "name": "Golem",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": "2-3",
+    "pre": "Graveler"
+  },
+  {
+    "id": "060",
+    "hex": "3B",
+    "name": "Nosepass",
+    "board": "any",
+    "area": ["cave"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "061",
+    "hex": "3C",
+    "name": "Skitty",
+    "board": "ruby",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "062",
+    "hex": "3D",
+    "name": "Delcatty",
+    "board": "ruby",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Skitty"
+  },
+  {
+    "id": "063",
+    "hex": "3E",
+    "name": "Zubat",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "064",
+    "hex": "3F",
+    "name": "Golbat",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Zubat"
+  },
+  {
+    "id": "065",
+    "hex": 40,
+    "name": "Crobat",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Golbat"
+  },
+  {
+    "id": "066",
+    "hex": 41,
+    "name": "Tentacool",
+    "board": "any",
+    "area": ["lilycove", "beach"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "067",
+    "hex": 42,
+    "name": "Tentacruel",
+    "board": "any",
+    "area": ["lilycove", "beach"],
+    "arrows": "2-3",
+    "pre": "Tentacool"
+  },
+  {
+    "id": "068",
+    "hex": 43,
+    "name": "Sableye",
+    "board": "sapphire",
+    "area": ["cave"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": "069",
+    "hex": 44,
+    "name": "Mawile",
+    "board": "ruby",
+    "area": ["cave"],
+    "arrows": 2,
+    "pre": ""
+  },
+  {
+    "id": "070",
+    "hex": 45,
+    "name": "Aron",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "071",
+    "hex": 46,
+    "name": "Lairon",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Aron"
+  },
+  {
+    "id": "072",
+    "hex": 47,
+    "name": "Aggron",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Lairon"
+  },
+  {
+    "id": "073",
+    "hex": 48,
+    "name": "Machop",
+    "board": "ruby",
+    "area": ["cave"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "074",
+    "hex": 49,
+    "name": "Machoke",
+    "board": "ruby",
+    "area": ["cave"],
+    "arrows": "2-3",
+    "pre": "Machop"
+  },
+  {
+    "id": "075",
+    "hex": "4A",
+    "name": "Machamp",
+    "board": "ruby",
+    "area": ["cave"],
+    "arrows": "2-3",
+    "pre": "Machoke"
+  },
+  {
+    "id": "076",
+    "hex": "4B",
+    "name": "Meditite",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "077",
+    "hex": "4C",
+    "name": "Medicham",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": "2-3",
+    "pre": "Meditite"
+  },
+  {
+    "id": "078",
+    "hex": "4D",
+    "name": "Electrike",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": 2,
+    "pre": ""
+  },
+  {
+    "id": "079",
+    "hex": "4E",
+    "name": "Manectric",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": 2,
+    "pre": "Electrike"
+  },
+  {
+    "id": "080",
+    "hex": "4F",
+    "name": "Plusle",
+    "board": "ruby",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "081",
+    "hex": 50,
+    "name": "Minun",
+    "board": "ruby",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "082",
+    "hex": 51,
+    "name": "Magnemite",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "083",
+    "hex": 52,
+    "name": "Magneton",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": "2-3",
+    "pre": "Magnemite"
+  },
+  {
+    "id": "084",
+    "hex": 53,
+    "name": "Voltorb",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "085",
+    "hex": 54,
+    "name": "Electrode",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": "2-3",
+    "pre": "Voltorb"
+  },
+  {
+    "id": "086",
+    "hex": 55,
+    "name": "Volbeat",
+    "board": "sapphire",
+    "area": ["plains"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": "087",
+    "hex": 56,
+    "name": "Illumise",
+    "board": "ruby",
+    "area": ["plains"],
+    "arrows": 2,
+    "pre": ""
+  },
+  {
+    "id": "088",
+    "hex": 57,
+    "name": "Oddish",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "089",
+    "hex": 58,
+    "name": "Gloom",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Oddish"
+  },
+  {
+    "id": "090",
+    "hex": 59,
+    "name": "Vileplume",
+    "board": "ruby",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Gloom"
+  },
+  {
+    "id": "091",
+    "hex": "5A",
+    "name": "Bellossom",
+    "board": "sapphire",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Gloom"
+  },
+  {
+    "id": "092",
+    "hex": "5B",
+    "name": "Doduo",
+    "board": "ruby",
+    "area": ["safari zone"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "093",
+    "hex": "5C",
+    "name": "Dodrio",
+    "board": "ruby",
+    "area": ["safari zone"],
+    "arrows": "2-3",
+    "pre": "Doduo"
+  },
+  {
+    "id": "094",
+    "hex": "5D",
+    "name": "Roselia",
+    "board": "sapphire",
+    "area": ["forest"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "095",
+    "hex": "5E",
+    "name": "Gulpin",
+    "board": "sapphire",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": "096",
+    "hex": "5F",
+    "name": "Swalot",
+    "board": "sapphire",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Gulpin"
+  },
+  {
+    "id": "097",
+    "hex": 60,
+    "name": "Carvanha",
+    "board": "any",
+    "area": ["lilycove", "beach"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": "098",
+    "hex": 61,
+    "name": "Sharpedo",
+    "board": "any",
+    "area": ["lilycove", "beach"],
+    "arrows": "2-3",
+    "pre": "Carvanha"
+  },
+  {
+    "id": "099",
+    "hex": 62,
+    "name": "Wailmer",
+    "board": "ruby",
+    "area": ["lilycove"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 100,
+    "hex": 63,
+    "name": "Wailord",
+    "board": "ruby",
+    "area": ["lilycove"],
+    "arrows": "2-3",
+    "pre": "Wailmer"
+  },
+  {
+    "id": 101,
+    "hex": 64,
+    "name": "Numel",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 102,
+    "hex": 65,
+    "name": "Camerupt",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": "2-3",
+    "pre": "Numel"
+  },
+  {
+    "id": 103,
+    "hex": 66,
+    "name": "Slugma",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": 2,
+    "pre": ""
+  },
+  {
+    "id": 104,
+    "hex": 67,
+    "name": "Magcargo",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": 2,
+    "pre": "Slugma"
+  },
+  {
+    "id": 105,
+    "hex": 68,
+    "name": "Torkoal",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 106,
+    "hex": 69,
+    "name": "Grimer",
+    "board": "any",
+    "area": ["cave"],
+    "arrows": 2,
+    "pre": ""
+  },
+  {
+    "id": 107,
+    "hex": "6A",
+    "name": "Muk",
+    "board": "any",
+    "area": ["cave"],
+    "arrows": 2,
+    "pre": "Grimer"
+  },
+  {
+    "id": 108,
+    "hex": "6B",
+    "name": "Koffing",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": 2,
+    "pre": ""
+  },
+  {
+    "id": 109,
+    "hex": "6C",
+    "name": "Weezing",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": 2,
+    "pre": "Koffing"
+  },
+  {
+    "id": 110,
+    "hex": "6D",
+    "name": "Spoink",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 111,
+    "hex": "6E",
+    "name": "Grumpig",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Spoink"
+  },
+  {
+    "id": 112,
+    "hex": "6F",
+    "name": "Sandshrew",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 113,
+    "hex": 70,
+    "name": "Sandslash",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Sandshrew"
+  },
+  {
+    "id": 114,
+    "hex": 71,
+    "name": "Spinda",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 115,
+    "hex": 72,
+    "name": "Skarmory",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 116,
+    "hex": 73,
+    "name": "Trapinch",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 117,
+    "hex": 74,
+    "name": "Vibrava",
+    "board": "sapphire",
+    "area": ["desert", "egg"],
+    "arrows": "2-3",
+    "pre": "Trapinch"
+  },
+  {
+    "id": 118,
+    "hex": 75,
+    "name": "Flygon",
+    "board": "sapphire",
+    "area": ["desert", "egg"],
+    "arrows": "2-3",
+    "pre": "Vibrava"
+  },
+  {
+    "id": 119,
+    "hex": 76,
+    "name": "Cacnea",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 120,
+    "hex": 77,
+    "name": "Cacturne",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": "2-3",
+    "pre": "Cacnea"
+  },
+  {
+    "id": 121,
+    "hex": 78,
+    "name": "Swablu",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": 122,
+    "hex": 79,
+    "name": "Altaria",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": 3,
+    "pre": "Swablu"
+  },
+  {
+    "id": 123,
+    "hex": "7A",
+    "name": "Zangoose",
+    "board": "ruby",
+    "area": ["plains"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": 124,
+    "hex": "7B",
+    "name": "Seviper",
+    "board": "sapphire",
+    "area": ["plains"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": 125,
+    "hex": "7C",
+    "name": "Lunatone",
+    "board": "sapphire",
+    "area": ["cave"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 126,
+    "hex": "7D",
+    "name": "Solrock",
+    "board": "ruby",
+    "area": ["cave"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 127,
+    "hex": "7E",
+    "name": "Barboach",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 128,
+    "hex": "7F",
+    "name": "Whiscash",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": "2-3",
+    "pre": "Barboach"
+  },
+  {
+    "id": 129,
+    "hex": 80,
+    "name": "Corphish",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 130,
+    "hex": 81,
+    "name": "Crawdaunt",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": "2-3",
+    "pre": "Corphish"
+  },
+  {
+    "id": 131,
+    "hex": 82,
+    "name": "Baltoy",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": 2,
+    "pre": ""
+  },
+  {
+    "id": 132,
+    "hex": 83,
+    "name": "Claydol",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": 2,
+    "pre": "Baltoy"
+  },
+  {
+    "id": 133,
+    "hex": 84,
+    "name": "Lileep",
+    "board": "ruby",
+    "area": ["lilycove"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 134,
+    "hex": 85,
+    "name": "Cradily",
+    "board": "ruby",
+    "area": ["lilycove"],
+    "arrows": "2-3",
+    "pre": "Lileep"
+  },
+  {
+    "id": 135,
+    "hex": 86,
+    "name": "Anorith",
+    "board": "sapphire",
+    "area": ["beach"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 136,
+    "hex": 87,
+    "name": "Armaldo",
+    "board": "sapphire",
+    "area": ["beach"],
+    "arrows": "2-3",
+    "pre": "Anorith"
+  },
+  {
+    "id": 137,
+    "hex": 88,
+    "name": "Igglybuff",
+    "board": "sapphire",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 138,
+    "hex": 89,
+    "name": "Jigglypuff",
+    "board": "sapphire",
+    "area": ["plains", "egg"],
+    "arrows": "2-3",
+    "pre": "Igglybuff"
+  },
+  {
+    "id": 139,
+    "hex": "8A",
+    "name": "Wigglytuff",
+    "board": "sapphire",
+    "area": ["plains", "egg"],
+    "arrows": "2-3",
+    "pre": "Jigglypuff"
+  },
+  {
+    "id": 140,
+    "hex": "8B",
+    "name": "Feebas",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 141,
+    "hex": "8C",
+    "name": "Milotic",
+    "board": "sapphire",
+    "area": ["lake"],
+    "arrows": "2-3",
+    "pre": "Feebas"
+  },
+  {
+    "id": 142,
+    "hex": "8D",
+    "name": "Castform",
+    "board": "any",
+    "area": ["plains"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 143,
+    "hex": "8E",
+    "name": "Staryu",
+    "board": "ruby",
+    "area": ["lilycove"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": 144,
+    "hex": "8F",
+    "name": "Starmie",
+    "board": "ruby",
+    "area": ["lilycove"],
+    "arrows": 3,
+    "pre": "Staryu"
+  },
+  {
+    "id": 145,
+    "hex": 90,
+    "name": "Kecleon",
+    "board": "any",
+    "area": ["forest"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 146,
+    "hex": 91,
+    "name": "Shuppet",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 147,
+    "hex": 92,
+    "name": "Banette",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Shuppet"
+  },
+  {
+    "id": 148,
+    "hex": 93,
+    "name": "Duskull",
+    "board": "any",
+    "area": ["forest"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 149,
+    "hex": 94,
+    "name": "Dusclops",
+    "board": "any",
+    "area": ["forest"],
+    "arrows": "2-3",
+    "pre": "Duskull"
+  },
+  {
+    "id": 150,
+    "hex": 95,
+    "name": "Tropius",
+    "board": "sapphire",
+    "area": ["forest"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": 151,
+    "hex": 96,
+    "name": "Chimecho",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 152,
+    "hex": 97,
+    "name": "Absol",
+    "board": "sapphire",
+    "area": ["desert"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 153,
+    "hex": 98,
+    "name": "Vulpix",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 154,
+    "hex": 99,
+    "name": "Ninetales",
+    "board": "ruby",
+    "area": ["mountain"],
+    "arrows": "2-3",
+    "pre": "Vulpix"
+  },
+  {
+    "id": 155,
+    "hex": "9A",
+    "name": "Pichu",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 156,
+    "hex": "9B",
+    "name": "Pikachu",
+    "board": "ruby",
+    "area": ["safari zone", "egg"],
+    "arrows": 3,
+    "pre": "Pichu"
+  },
+  {
+    "id": 157,
+    "hex": "9C",
+    "name": "Raichu",
+    "board": "ruby",
+    "area": ["safari zone", "egg"],
+    "arrows": 3,
+    "pre": "Pikachu"
+  },
+  {
+    "id": 158,
+    "hex": "9D",
+    "name": "Psyduck",
+    "board": "ruby",
+    "area": ["safari zone"],
+    "arrows": 2,
+    "pre": ""
+  },
+  {
+    "id": 159,
+    "hex": "9E",
+    "name": "Golduck",
+    "board": "ruby",
+    "area": ["safari zone"],
+    "arrows": 2,
+    "pre": "Psyduck"
+  },
+  {
+    "id": 160,
+    "hex": "9F",
+    "name": "Wynaut",
+    "board": "ruby",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 161,
+    "hex": "A0",
+    "name": "Wobbuffet",
+    "board": "ruby",
+    "area": ["safari zone"],
+    "arrows": "2-3",
+    "pre": "Wynaut"
+  },
+  {
+    "id": 162,
+    "hex": "A1",
+    "name": "Natu",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 163,
+    "hex": "A2",
+    "name": "Xatu",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Natu"
+  },
+  {
+    "id": 164,
+    "hex": "A3",
+    "name": "Girafarig",
+    "board": "ruby",
+    "area": ["safari zone"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 165,
+    "hex": "A4",
+    "name": "Phanpy",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 166,
+    "hex": "A5",
+    "name": "Donphan",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Phanpy"
+  },
+  {
+    "id": 167,
+    "hex": "A6",
+    "name": "Pinsir",
+    "board": "ruby",
+    "area": ["safari zone"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 168,
+    "hex": "A7",
+    "name": "Heracross",
+    "board": "ruby",
+    "area": ["safari zone"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 169,
+    "hex": "A8",
+    "name": "Rhyhorn",
+    "board": "ruby",
+    "area": ["safari zone"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 170,
+    "hex": "A9",
+    "name": "Rhydon",
+    "board": "ruby",
+    "area": ["safari zone"],
+    "arrows": "2-3",
+    "pre": "Rhyhorn"
+  },
+  {
+    "id": 171,
+    "hex": "AA",
+    "name": "Snorunt",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 172,
+    "hex": "AB",
+    "name": "Glalie",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Snorunt"
+  },
+  {
+    "id": 173,
+    "hex": "AC",
+    "name": "Spheal",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 174,
+    "hex": "AD",
+    "name": "Sealeo",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Spheal"
+  },
+  {
+    "id": 175,
+    "hex": "AE",
+    "name": "Walrein",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Sealeo"
+  },
+  {
+    "id": 176,
+    "hex": "AF",
+    "name": "Clamperl",
+    "board": "sapphire",
+    "area": ["beach"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": 177,
+    "hex": "B0",
+    "name": "Huntail",
+    "board": "sapphire",
+    "area": ["beach"],
+    "arrows": 3,
+    "pre": "Clamperl"
+  },
+  {
+    "id": 178,
+    "hex": "B1",
+    "name": "Gorebyss",
+    "board": "sapphire",
+    "area": ["beach"],
+    "arrows": 3,
+    "pre": "Clamperl"
+  },
+  {
+    "id": 179,
+    "hex": "B2",
+    "name": "Relicanth",
+    "board": "any",
+    "area": ["lilycove", "beach"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": 180,
+    "hex": "B3",
+    "name": "Corsola",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 181,
+    "hex": "B4",
+    "name": "Chinchou",
+    "board": "sapphire",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 182,
+    "hex": "B5",
+    "name": "Lanturn",
+    "board": "sapphire",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Chinchou"
+  },
+  {
+    "id": 183,
+    "hex": "B6",
+    "name": "Luvdisc",
+    "board": "any",
+    "area": ["lilycove", "beach"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 184,
+    "hex": "B7",
+    "name": "Horsea",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 185,
+    "hex": "B8",
+    "name": "Seadra",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Horsea"
+  },
+  {
+    "id": 186,
+    "hex": "B9",
+    "name": "Kingdra",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": "Seadra"
+  },
+  {
+    "id": 187,
+    "hex": "BA",
+    "name": "Bagon",
+    "board": "any",
+    "area": ["egg"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 188,
+    "hex": "BB",
+    "name": "Shelgon",
+    "board": "any",
+    "area": ["cave", "egg"],
+    "arrows": "2-3",
+    "pre": "Bagon"
+  },
+  {
+    "id": 189,
+    "hex": "BC",
+    "name": "Salamence",
+    "board": "any",
+    "area": ["cave", "egg"],
+    "arrows": "2-3",
+    "pre": "Shelgon"
+  },
+  {
+    "id": 190,
+    "hex": "BD",
+    "name": "Beldum",
+    "board": "any",
+    "area": ["ruins"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 191,
+    "hex": "BE",
+    "name": "Metang",
+    "board": "any",
+    "area": ["ruins"],
+    "arrows": "2-3",
+    "pre": "Beldum"
+  },
+  {
+    "id": 192,
+    "hex": "BF",
+    "name": "Metagross",
+    "board": "any",
+    "area": ["ruins"],
+    "arrows": "2-3",
+    "pre": "Metang"
+  },
+  {
+    "id": 193,
+    "hex": "C0",
+    "name": "Regirock",
+    "board": "any",
+    "area": ["ruins"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 194,
+    "hex": "C1",
+    "name": "Regice",
+    "board": "any",
+    "area": ["ruins"],
+    "arrows": "2-3",
+    "pre": ""
+  },
+  {
+    "id": 195,
+    "hex": "C2",
+    "name": "Registeel",
+    "board": "any",
+    "area": ["ruins"],
+    "arrows": 3,
+    "pre": ""
+  },
+  {
+    "id": 196,
+    "hex": "C3",
+    "name": "Latias",
+    "board": "sapphire",
+    "area": [],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 197,
+    "hex": "C4",
+    "name": "Latios",
+    "board": "ruby",
+    "area": [],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 198,
+    "hex": "C5",
+    "name": "Kyogre",
+    "board": "sapphire",
+    "area": [],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 199,
+    "hex": "C6",
+    "name": "Groudon",
+    "board": "ruby",
+    "area": [],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 200,
+    "hex": "C7",
+    "name": "Rayquaza",
+    "board": "any",
+    "area": [],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 201,
+    "hex": "C8",
+    "name": "Jirachi",
+    "board": "any",
+    "area": ["ruins"],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 202,
+    "hex": "C9",
+    "name": "Chikorita",
+    "board": "any",
+    "area": [],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 203,
+    "hex": "CA",
+    "name": "Cyndaquil",
+    "board": "any",
+    "area": [],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 204,
+    "hex": "CB",
+    "name": "Totodile",
+    "board": "any",
+    "area": [],
+    "arrows": "",
+    "pre": ""
+  },
+  {
+    "id": 205,
+    "hex": "CC",
+    "name": "Aerodactyl",
+    "board": "any",
+    "area": [],
+    "arrows": "",
+    "pre": ""
+  }
+]
