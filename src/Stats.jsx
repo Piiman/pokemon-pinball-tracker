@@ -1,8 +1,9 @@
 import { Center, ColorSwatch, Flex, Progress, RingProgress, ScrollArea, SegmentedControl, Switch, Table, Text, Title } from "@mantine/core";
-import { useDisclosure, useLocalStorage } from '@mantine/hooks';
+import { useLocalStorage } from '@mantine/hooks';
 
 import pokedex from './pokedex.json';
 import { useState } from "react";
+import { ExportButton } from "./ImportExport";
 
 export function Stats() {
   const [captured] = useLocalStorage({
@@ -176,7 +177,10 @@ export function Stats() {
   
   return (<ScrollArea>
     <Flex direction="column">
-      <Title order={2} mx="xs">Progress</Title>
+      <Flex mt="xs" mx="xs" justify="space-between" align="center">
+        <Title order={2}>Progress</Title>
+        <ExportButton/>
+      </Flex>
       
       <Title order={4} mx="xs">Field</Title>
       <Center>
