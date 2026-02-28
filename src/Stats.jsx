@@ -3,7 +3,7 @@ import { useLocalStorage } from '@mantine/hooks';
 
 import pokedex from './pokedex.json';
 import { useState } from "react";
-import { ExportButton } from "./ImportExport";
+import { ExportButton, ImportButton } from "./ImportExport";
 
 export function Stats() {
   const [captured] = useLocalStorage({
@@ -180,6 +180,7 @@ export function Stats() {
       <Flex mt="xs" mx="xs" justify="space-between" align="center">
         <Title order={2}>Progress</Title>
         <ExportButton/>
+        <ImportButton/>
       </Flex>
       
       <Title order={4} mx="xs">Field</Title>
