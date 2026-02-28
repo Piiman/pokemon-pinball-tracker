@@ -25,8 +25,7 @@ export function Filters() {
   //TODO solve warning caused for using this
   const [opened, { toggle }] = useDisclosure(false);
   
-
-  const commonAreas = ["Forest", "Cave", "Plains", "Ruins", "Egg"];
+  const commonAreas = ["Any", "Forest", "Cave", "Plains", "Ruins", "Egg"];
   const rubyAreas = ["Safari Zone", "Mountain", "Lilycove"];
   const sapphireAreas = ["Lake", "Desert", "Beach"];
 
@@ -35,6 +34,8 @@ export function Filters() {
   let areaOptions = [{ group: 'Common', items: toSelectOption(commonAreas) }];
   if (field == undefined || field == "" || field == "Ruby") areaOptions.push({ group: 'Ruby', items: toSelectOption(rubyAreas) });
   if (field == undefined || field == "" || field == "Sapphire") areaOptions.push({ group: 'Sapphire', items: toSelectOption(sapphireAreas) });
+
+  let fieldOptions = toSelectOption(["Any", "Ruby", "Sapphire"]);
 
   return (<Container my={16} maw={900}>
     <Grid align="center" grow>
@@ -55,12 +56,13 @@ export function Filters() {
         />
       </Grid.Col>
       <Grid.Col span={4} visibleFrom="sm">
-        <Select
-          placeholder="Field"
-          data={['Ruby', 'Sapphire']}
+        <MultiSelect
+          placeholder={field != undefined && field.length == 0 ? "Field" : ""}
+          data={fieldOptions}
           value={field}
           onChange={SetField}
           clearable
+          hidePickedOptions
         />
       </Grid.Col>
     </Grid>
@@ -79,12 +81,13 @@ export function Filters() {
           />
         </Grid.Col>
         <Grid.Col span={4} display={{base: 'block', sm: 'none'}}>
-          <Select
-            placeholder="Field"
-            data={['Ruby', 'Sapphire']}
+          <MultiSelect
+            placeholder={field != undefined && field.length == 0 ? "Field" : ""}
+            data={fieldOptions}
             value={field}
             onChange={SetField}
             clearable
+            hidePickedOptions
           />
         </Grid.Col>
         <Grid.Col span={4}>

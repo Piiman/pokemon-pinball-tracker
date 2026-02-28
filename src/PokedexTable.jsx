@@ -42,13 +42,14 @@ export function PokedexTable() {
   const rows = pokedex.map((row) => {
     if (!eReader && row.id > 201) return null;
 
-    if (field != undefined && field != "" && row.board != "any" && row.board != field.toLowerCase()) return null;
+    if (field != undefined && field.length != 0 && !field.includes(row.board)) return null;
 
     let isCaptured = captured.includes(row.id);
     if (missing && isCaptured) return null;
 
-    if (area != undefined && area.length != 0 && row.area.length != 0) {
+    if (area != undefined && area.length != 0) {
       let flag = true;
+      if (row.area.length == 0 && area.includes("any")) flag = false
       for (const item of row.area) {
         if (area.includes(item)) {
           flag = false;
@@ -66,12 +67,12 @@ export function PokedexTable() {
         color="red"
         aria-label="Select row"
       /></Table.Td>
-      <Table.Td visibleFrom="md">{row.id}</Table.Td>
+      <Table.Td visibleFrom="sm">{row.id}</Table.Td>
       <Table.Td>{row.name}</Table.Td>
       <Table.Td>{row.board}</Table.Td>
       <Table.Td>{row.area.join("・")}</Table.Td>
       <Table.Td>{row.arrows}</Table.Td>
-      <Table.Td visibleFrom="md">{row.pre}</Table.Td>
+      <Table.Td visibleFrom="sm">{row.pre}</Table.Td>
     </Table.Tr>
   });
 
@@ -82,12 +83,12 @@ export function PokedexTable() {
         <Table.Thead bg="red" className={cx(classes.header, { [classes.scrolled]: scrolled })}>
           <Table.Tr>
             <Table.Th w={0}></Table.Th>
-            <Table.Th visibleFrom="md">Id</Table.Th>
+            <Table.Th visibleFrom="sm">Id</Table.Th>
             <Table.Th>Pokemon</Table.Th>
             <Table.Th>Field</Table.Th>
             <Table.Th>Area</Table.Th>
             <Table.Th>Arrows</Table.Th>
-            <Table.Th visibleFrom="md">Prev. Evolution</Table.Th>
+            <Table.Th visibleFrom="sm">Prev. Evolution</Table.Th>
           </Table.Tr>
         </Table.Thead>
         <Table.Tbody>{rows}</Table.Tbody>

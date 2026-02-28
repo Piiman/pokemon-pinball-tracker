@@ -196,18 +196,22 @@ export function Stats() {
         </Progress.Root>
       </Center>
       <Table mb={32} ta="center">
-        <Table.Tr>
-          <Table.Td></Table.Td>
-          <Table.Td>%Caught</Table.Td>
-          <Table.Td>%Missing</Table.Td>
-          <Table.Td>Fraction</Table.Td>
-        </Table.Tr>
-        <ProgressTableRow title="Total" percent={anyPercent + rubyPercent + sapphirePercent} count={counts.any.total + counts.ruby.total + counts.sapphire.total} total={totalPokes} color="green"/>
-        {/* <ProgressTableRow title="Any" percent={anyPercent} count={counts.any.total} total={totals.any.total - (!eReader ? 4 : 0)}/>
-        <ProgressTableRow title="Ruby" percent={rubyPercent} count={counts.ruby.total} total={totals.ruby.total - (!eReader ? 4 : 0)}/> */}
-        <ProgressTableRow title="Ruby" percent={anyPercent + rubyPercent} count={counts.any.total + counts.ruby.total} total={totals.any.total + totals.ruby.total - (!eReader ? 4 : 0)} color="red"/>
-        {/* <ProgressTableRow title="Sapphire" percent={sapphirePercent} count={counts.sapphire.total} total={totals.sapphire.total - (!eReader ? 4 : 0)}/> */}
-        <ProgressTableRow title="Sapphire" percent={anyPercent + sapphirePercent} count={counts.any.total + counts.sapphire.total} total={totals.any.total + totals.sapphire.total - (!eReader ? 4 : 0)} color="blue"/>
+        <Table.Thead>
+          <Table.Tr>
+            <Table.Td></Table.Td>
+            <Table.Td>%Caught</Table.Td>
+            <Table.Td>%Missing</Table.Td>
+            <Table.Td>Fraction</Table.Td>
+          </Table.Tr>
+        </Table.Thead>
+        <Table.Tbody>
+          <ProgressTableRow title="Total" percent={anyPercent + rubyPercent + sapphirePercent} count={counts.any.total + counts.ruby.total + counts.sapphire.total} total={totalPokes} color="green"/>
+          {/* <ProgressTableRow title="Any" percent={anyPercent} count={counts.any.total} total={totals.any.total - (!eReader ? 4 : 0)}/>
+          <ProgressTableRow title="Ruby" percent={rubyPercent} count={counts.ruby.total} total={totals.ruby.total - (!eReader ? 4 : 0)}/> */}
+          <ProgressTableRow title="Ruby" percent={anyPercent + rubyPercent} count={counts.any.total + counts.ruby.total} total={totals.any.total + totals.ruby.total - (!eReader ? 4 : 0)} color="red"/>
+          {/* <ProgressTableRow title="Sapphire" percent={sapphirePercent} count={counts.sapphire.total} total={totals.sapphire.total - (!eReader ? 4 : 0)}/> */}
+          <ProgressTableRow title="Sapphire" percent={anyPercent + sapphirePercent} count={counts.any.total + counts.sapphire.total} total={totals.any.total + totals.sapphire.total - (!eReader ? 4 : 0)} color="blue"/>
+        </Table.Tbody>
       </Table>
       <Title order={4} mx="xs">Area</Title>
       <Center mx="xs">
@@ -236,13 +240,15 @@ export function Stats() {
         />
       </Center>
       <Table mb={32} ta="center">
-        <Table.Tr>
-          <Table.Td></Table.Td>
-          <Table.Td>%Caught</Table.Td>
-          <Table.Td>%Missing</Table.Td>
-          <Table.Td>Fraction</Table.Td>
-        </Table.Tr>
-        {areaTableRows}
+        <Table.Thead>
+          <Table.Tr>
+            <Table.Td></Table.Td>
+            <Table.Td>%Caught</Table.Td>
+            <Table.Td>%Missing</Table.Td>
+            <Table.Td>Fraction</Table.Td>
+          </Table.Tr>
+        </Table.Thead>
+        <Table.Tbody>{areaTableRows}</Table.Tbody>
       </Table>
     </Flex>
   </ScrollArea>

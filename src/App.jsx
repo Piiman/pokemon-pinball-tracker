@@ -29,7 +29,7 @@ function App() {
 
   const [field, SetField] = useLocalStorage({
     key: 'field-filter',
-    defaultValue: ""
+    defaultValue: []
   });
 
   const [area, SetArea] = useLocalStorage({
