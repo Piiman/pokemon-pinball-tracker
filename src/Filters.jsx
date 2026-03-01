@@ -17,6 +17,7 @@ export function Filters() {
 
   const [field, SetField] = useLocalStorage({
     key: 'field-filter',
+    defaultValue: []
   });
 
   const [area, SetArea] = useLocalStorage({
@@ -32,8 +33,8 @@ export function Filters() {
   let toSelectOption = function (arr) {return arr.map(item => {return {value: item.toLowerCase(), label: item}})}
 
   let areaOptions = [{ group: 'Common', items: toSelectOption(commonAreas) }];
-  if (field == undefined || field == "" || field == "Ruby") areaOptions.push({ group: 'Ruby', items: toSelectOption(rubyAreas) });
-  if (field == undefined || field == "" || field == "Sapphire") areaOptions.push({ group: 'Sapphire', items: toSelectOption(sapphireAreas) });
+  if (field == [] || (field.length == 1 && field[0] == "any") || field.includes("ruby")) areaOptions.push({ group: 'Ruby', items: toSelectOption(rubyAreas) });
+  if (field == [] || (field.length == 1 && field[0] == "any") || field.includes("sapphire")) areaOptions.push({ group: 'Sapphire', items: toSelectOption(sapphireAreas) });
 
   let fieldOptions = toSelectOption(["Any", "Ruby", "Sapphire"]);
 
