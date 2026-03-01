@@ -172,7 +172,7 @@ export function Stats() {
     "beach": "#ffe066",
   };
   
-  let ringSections = Object.keys(displayCounts).map((key) => {return key != "total" ? {value: (displayCounts[key] / totalPokes) * 100, color: colorMap[key]} : null}).filter(x => x != null);
+  let ringSections = Object.keys(displayCounts).map((key) => {return key != "total" ? {value: (displayCounts[key] / displayTotals.total) * 100, color: colorMap[key]} : null}).filter(x => x != null);
   let areaTableRows = Object.keys(displayCounts).map((key) => {return key != "total" ? <ProgressTableRow title={key} percent={(displayCounts[key] / displayTotals[key]) * 100} count={displayCounts[key]} total={displayTotals[key]} color={colorMap[key]}/> : null})
   
   return (<ScrollArea>
