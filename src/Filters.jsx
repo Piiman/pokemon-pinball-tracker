@@ -81,7 +81,7 @@ export function Filters() {
             color="red"
           />
         </Grid.Col>
-        <Grid.Col span={4} display={{base: 'block', sm: 'none'}}>
+        <Grid.Col span={12} display={{base: 'block', sm: 'none'}}>
           <MultiSelect
             placeholder={field != undefined && field.length == 0 ? "Field" : ""}
             data={fieldOptions}
