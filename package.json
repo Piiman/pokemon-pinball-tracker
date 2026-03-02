@@ -1,7 +1,7 @@
 {
-  "name": "codespaces-react",
-  "homepage": "https://Piiman.github.io/pokemon-pinball-tracker/",
-  "version": "0.1.2",
+  "name": "pokemon-pinball-rs-tracker",
+  "homepage": "https://poketrack.app/",
+  "version": "0.1.3",
   "private": true,
   "type": "module",
   "dependencies": {
