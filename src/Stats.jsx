@@ -210,9 +210,9 @@ export function Stats() {
           <ProgressTableRow title="Total" percent={anyPercent + rubyPercent + sapphirePercent} count={counts.any.total + counts.ruby.total + counts.sapphire.total} total={totalPokes} color="green"/>
           {/* <ProgressTableRow title="Any" percent={anyPercent} count={counts.any.total} total={totals.any.total - (!eReader ? 4 : 0)}/>
           <ProgressTableRow title="Ruby" percent={rubyPercent} count={counts.ruby.total} total={totals.ruby.total - (!eReader ? 4 : 0)}/> */}
-          <ProgressTableRow title="Ruby" percent={anyPercent + rubyPercent} count={counts.any.total + counts.ruby.total} total={totals.any.total + totals.ruby.total - (!eReader ? 4 : 0)} color="red"/>
+          <ProgressTableRow title="Ruby" percent={(counts.any.total + counts.ruby.total) / (totals.any.total + totals.ruby.total) * 100} count={counts.any.total + counts.ruby.total} total={totals.any.total + totals.ruby.total} color="red"/>
           {/* <ProgressTableRow title="Sapphire" percent={sapphirePercent} count={counts.sapphire.total} total={totals.sapphire.total - (!eReader ? 4 : 0)}/> */}
-          <ProgressTableRow title="Sapphire" percent={anyPercent + sapphirePercent} count={counts.any.total + counts.sapphire.total} total={totals.any.total + totals.sapphire.total - (!eReader ? 4 : 0)} color="blue"/>
+          <ProgressTableRow title="Sapphire" percent={(counts.any.total + counts.sapphire.total) / (totals.any.total + totals.sapphire.total) * 100} count={counts.any.total + counts.sapphire.total} total={totals.any.total + totals.sapphire.total} color="blue"/>
         </Table.Tbody>
       </Table>
       <Flex justify="space-between" align="center">
