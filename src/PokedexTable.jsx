@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import cx from 'clsx';
-import { ScrollArea, Table, Checkbox, Container } from '@mantine/core';
+import { ScrollArea, Table, Checkbox, Container, Image, Flex } from '@mantine/core';
 import { useLocalStorage } from '@mantine/hooks';
 import classes from './TableScrollArea.module.css';
 
@@ -70,7 +70,9 @@ export function PokedexTable() {
       <Table.Td visibleFrom="sm">{row.id}</Table.Td>
       <Table.Td>{row.name}</Table.Td>
       <Table.Td>{row.board}</Table.Td>
-      <Table.Td>{row.area.join("・")}</Table.Td>
+      <Table.Td><Flex gap={5}>{
+        row.area.map((area) => (<Image h={{ base: "1.5rem", sm: "2rem" }} w="auto" fit="contains" src={`area_images/${area}.png`} alt={area}/>))
+      }</Flex></Table.Td>
       <Table.Td>{row.arrows}</Table.Td>
       <Table.Td visibleFrom="sm">{row.pre}</Table.Td>
     </Table.Tr>

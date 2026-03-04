@@ -1759,7 +1759,7 @@
     "hex": "C3",
     "name": "Latias",
     "board": "sapphire",
-    "area": [],
+    "area": ["any"],
     "arrows": "",
     "pre": ""
   },
@@ -1768,7 +1768,7 @@
     "hex": "C4",
     "name": "Latios",
     "board": "ruby",
-    "area": [],
+    "area": ["any"],
     "arrows": "",
     "pre": ""
   },
@@ -1777,7 +1777,7 @@
     "hex": "C5",
     "name": "Kyogre",
     "board": "sapphire",
-    "area": [],
+    "area": ["any"],
     "arrows": "",
     "pre": ""
   },
@@ -1786,7 +1786,7 @@
     "hex": "C6",
     "name": "Groudon",
     "board": "ruby",
-    "area": [],
+    "area": ["any"],
     "arrows": "",
     "pre": ""
   },
@@ -1795,7 +1795,7 @@
     "hex": "C7",
     "name": "Rayquaza",
     "board": "any",
-    "area": [],
+    "area": ["any"],
     "arrows": "",
     "pre": ""
   },
@@ -1813,7 +1813,7 @@
     "hex": "C9",
     "name": "Chikorita",
     "board": "any",
-    "area": [],
+    "area": ["any"],
     "arrows": "",
     "pre": ""
   },
@@ -1822,7 +1822,7 @@
     "hex": "CA",
     "name": "Cyndaquil",
     "board": "any",
-    "area": [],
+    "area": ["any"],
     "arrows": "",
     "pre": ""
   },
@@ -1831,7 +1831,7 @@
     "hex": "CB",
     "name": "Totodile",
     "board": "any",
-    "area": [],
+    "area": ["any"],
     "arrows": "",
     "pre": ""
   },
@@ -1840,7 +1840,7 @@
     "hex": "CC",
     "name": "Aerodactyl",
     "board": "any",
-    "area": [],
+    "area": ["any"],
     "arrows": "",
     "pre": ""
   }

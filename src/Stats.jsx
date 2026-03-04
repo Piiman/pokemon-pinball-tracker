@@ -1,4 +1,4 @@
-import { Center, ColorSwatch, Flex, Progress, RingProgress, ScrollArea, SegmentedControl, Switch, Table, Text, Title } from "@mantine/core";
+import { Center, ColorSwatch, Flex, Group, Image, Progress, RingProgress, ScrollArea, SegmentedControl, Switch, Table, Text, Title } from "@mantine/core";
 import { useLocalStorage } from '@mantine/hooks';
 
 import pokedex from './pokedex.json';
@@ -173,7 +173,7 @@ export function Stats() {
   };
   
   let ringSections = Object.keys(displayCounts).map((key) => {return key != "total" ? {value: (displayCounts[key] / displayTotals.total) * 100, color: colorMap[key]} : null}).filter(x => x != null);
-  let areaTableRows = Object.keys(displayCounts).map((key) => {return key != "total" ? <ProgressTableRow title={key} percent={(displayCounts[key] / displayTotals[key]) * 100} count={displayCounts[key]} total={displayTotals[key]} color={colorMap[key]}/> : null})
+  let areaTableRows = Object.keys(displayCounts).map((key) => {return key != "total" ? <AreaProgressTableRow title={key} percent={(displayCounts[key] / displayTotals[key]) * 100} count={displayCounts[key]} total={displayTotals[key]} color={colorMap[key]}/> : null})
   
   return (<ScrollArea>
     <Flex direction="column">
@@ -260,9 +260,30 @@ export function Stats() {
   );
 }
 
+function AreaProgressTableRow({title, percent, count, total, color}) {
+  return (<Table.Tr>
+    <Table.Td><Flex align="center" gap={3}>
+      <ColorSwatch size={10} color={color}/>
+      {
+        title == "lilycove/beach" ?
+        (
+          <Group gap={0}>
+            <Image h="1.7rem" w="auto" fit="contains" src={`area_images/lilycove.png`} alt="lilycove"/>
+            <Image h="1.7rem" w="auto" fit="contains" src={`area_images/beach.png`} alt="beach"/>
+          </Group>
+        ) :
+        <Image h="1.7rem" w="auto" fit="contains" src={`area_images/${title}.png`} alt={title}/>
+      }
+    </Flex></Table.Td>
+    <Table.Td>{(percent).toFixed(2)}%</Table.Td>
+    <Table.Td>{(100 - percent).toFixed(2)}%</Table.Td>
+    <Table.Td>{count} / {total}</Table.Td>
+  </Table.Tr>);
+}
+
 function ProgressTableRow({title, percent, count, total, color}) {
   return (<Table.Tr>
-    <Table.Td><Flex align="center" gap="xs"><ColorSwatch size={10} color={color}/>{title}</Flex></Table.Td>
+    <Table.Td><Flex align="center" gap={3}><ColorSwatch size={10} color={color}/>{title}</Flex></Table.Td>
     <Table.Td>{(percent).toFixed(2)}%</Table.Td>
     <Table.Td>{(100 - percent).toFixed(2)}%</Table.Td>
     <Table.Td>{count} / {total}</Table.Td>

@@ -1,4 +1,4 @@
-import { Switch, TextInput, Container, Collapse, Button, Select, Grid, MultiSelect } from "@mantine/core";
+import { Switch, TextInput, Container, Collapse, Button, Grid, MultiSelect, Group, Image } from "@mantine/core";
 import { IconChevronsDown, IconChevronsUp } from '@tabler/icons-react';
 import { useDisclosure, useLocalStorage } from '@mantine/hooks';
 
@@ -37,6 +37,13 @@ export function Filters() {
   if (field.length == 0 || (field.length == 1 && field[0] == "any") || field.includes("sapphire")) areaOptions.push({ group: 'Sapphire', items: toSelectOption(sapphireAreas) });
 
   let fieldOptions = toSelectOption(["Any", "Ruby", "Sapphire"]);
+
+  const renderAreaOption = function({option}) {
+    return (<Group>
+      <Image h={{ base: "1.5rem"}} w="auto" fit="contains" src={`area_images/${option.value}.png`}/>
+      {option.label}
+    </Group>);
+  }
 
   return (<Container my={16} maw={900}>
     <Grid align="center" grow>
@@ -95,6 +102,7 @@ export function Filters() {
           <MultiSelect
             placeholder={area != undefined && area.length == 0 ? "Area" : ""}
             data={areaOptions}
+            renderOption={renderAreaOption}
             value={area}
             onChange={SetArea}
             clearable
