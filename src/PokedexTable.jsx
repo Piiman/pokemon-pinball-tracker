@@ -2,6 +2,7 @@ import { useState } from 'react';
 import cx from 'clsx';
 import { ScrollArea, Table, Checkbox, Container, Image, Flex } from '@mantine/core';
 import { useLocalStorage } from '@mantine/hooks';
+import { IconPokeball} from '@tabler/icons-react';
 import classes from './TableScrollArea.module.css';
 
 import pokedex from './pokedex.json';
@@ -61,11 +62,17 @@ export function PokedexTable() {
 
     if (poke != undefined && poke.length >= 3 && !row.name.toLowerCase().includes(poke.toLocaleLowerCase())) return null;
 
+    const checkboxIcon = ({...others}) => {
+      return <IconPokeball {...others}/>;
+    }
+
     return <Table.Tr key={row.name} onClick={() => updateCaptures(row.id)}>
       <Table.Td><Checkbox
+        icon={checkboxIcon}
+        iconColor='white'
         checked={isCaptured}
         color="red"
-        aria-label="Select row"
+        radius={20}
       /></Table.Td>
       <Table.Td visibleFrom="sm">{row.id}</Table.Td>
       <Table.Td>{row.name}</Table.Td>
