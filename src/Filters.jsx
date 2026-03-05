@@ -38,9 +38,9 @@ export function Filters() {
 
   let fieldOptions = toSelectOption(["Any", "Ruby", "Sapphire"]);
 
-  const renderAreaOption = function({option}) {
+  const renderAreaOption = function({option}, height, directory) {
     return (<Group>
-      <Image h={{ base: "1.5rem"}} w="auto" fit="contains" src={`area_images/${option.value}.png`}/>
+      <Image h={{ base: height}} w="auto" fit="contains" src={`${directory}/${option.value}.png`}/>
       {option.label}
     </Group>);
   }
@@ -67,6 +67,7 @@ export function Filters() {
         <MultiSelect
           placeholder={field != undefined && field.length == 0 ? "Field" : ""}
           data={fieldOptions}
+          renderOption={(option) => renderAreaOption(option, "1rem", "field_images")}
           value={field}
           onChange={SetField}
           clearable
@@ -92,6 +93,7 @@ export function Filters() {
           <MultiSelect
             placeholder={field != undefined && field.length == 0 ? "Field" : ""}
             data={fieldOptions}
+            renderOption={(option) => renderAreaOption(option, "1rem", "field_images")}
             value={field}
             onChange={SetField}
             clearable
@@ -102,7 +104,7 @@ export function Filters() {
           <MultiSelect
             placeholder={area != undefined && area.length == 0 ? "Area" : ""}
             data={areaOptions}
-            renderOption={renderAreaOption}
+            renderOption={(option) => renderAreaOption(option, "1.5rem", "area_images")}
             value={area}
             onChange={SetArea}
             clearable

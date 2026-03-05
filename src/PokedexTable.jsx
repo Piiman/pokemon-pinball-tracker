@@ -69,7 +69,7 @@ export function PokedexTable() {
       /></Table.Td>
       <Table.Td visibleFrom="sm">{row.id}</Table.Td>
       <Table.Td>{row.name}</Table.Td>
-      <Table.Td>{row.board}</Table.Td>
+      <Table.Td><Image h={{ base: "1rem" }} w="auto" fit="contains" src={`field_images/${row.board}.png`} alt={row.board}/></Table.Td>
       <Table.Td><Flex gap={5}>{
         row.area.map((area) => (<Image h={{ base: "1.5rem", sm: "2rem" }} w="auto" fit="contains" src={`area_images/${area}.png`} alt={area}/>))
       }</Flex></Table.Td>
