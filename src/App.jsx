@@ -1,10 +1,11 @@
 import './App.css';
 import '@mantine/core/styles.css';
-import { AppShell, Burger, Group, MantineProvider } from '@mantine/core';
+import { ActionIcon, Anchor, AppShell, Burger, Group, MantineProvider } from '@mantine/core';
 import { useDisclosure, useLocalStorage } from '@mantine/hooks';
 import { PokedexTable } from './PokedexTable';
 import { Filters } from './Filters';
 import { Stats } from './Stats';
+import { IconBrandGithub } from '@tabler/icons-react';
 
 function App() {
   const [captured, setCaptured] = useLocalStorage({
@@ -51,10 +52,15 @@ function App() {
         }}
       >
         <AppShell.Header>
-          <Group h="100%" px="md">
-            <Burger opened={mobileOpened} onClick={toggleMobile} hiddenFrom="sm" size="sm" />
-            <Burger opened={desktopOpened} onClick={toggleDesktop} visibleFrom="sm" size="sm" />
-            Pokemon Pinball Ruby & Sapphire Tracker
+          <Group h="100%" px="md" justify='space-between'>
+            <Group>
+              <Burger opened={mobileOpened} onClick={toggleMobile} hiddenFrom="sm" size="sm" />
+              <Burger opened={desktopOpened} onClick={toggleDesktop} visibleFrom="sm" size="sm" />
+              Pokemon Pinball Tracker
+            </Group>
+            <ActionIcon bg="red" component={Anchor} target="_blank" href="https://github.com/Piiman/pokemon-pinball-tracker" c='white'>
+              <IconBrandGithub/>
+            </ActionIcon>
           </Group>
         </AppShell.Header>
         <AppShell.Navbar>
