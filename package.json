@@ -1,7 +1,7 @@
 {
   "name": "pokemon-pinball-rs-tracker",
   "homepage": "https://poketrack.app/",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "type": "module",
   "dependencies": {
